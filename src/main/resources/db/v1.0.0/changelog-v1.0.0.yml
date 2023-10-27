@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: ./changelogs/changelog-create-table-product.yml
+      relativePath: true
+  - include:
+      file: ./changelogs/changelog-create-table-product.yml
+      relativePath: true

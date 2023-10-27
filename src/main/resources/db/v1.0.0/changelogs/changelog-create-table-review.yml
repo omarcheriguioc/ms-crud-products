@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: ocherigui
+      changes:
+        - createTable:
+            tableName: review
+            columns:
+              - column:
+                  name: id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: product_id
+                  type: INT
+              - column:
+                  name: rating
+                  type: INT
+              - column:
+                  name: comment
+                  type: TEXT
+        - addForeignKeyConstraint:
+            baseTableName: review
+            baseColumnNames: product_id
+            referencedTableName: product
+            referencedColumnNames: id
