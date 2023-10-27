@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: 1
+      id: 2
       author: ocherigui
       changes:
         - createTable:
@@ -22,7 +22,9 @@ databaseChangeLog:
                   name: comment
                   type: TEXT
         - addForeignKeyConstraint:
+            constraintName:  fk_review_product
             baseTableName: review
             baseColumnNames: product_id
             referencedTableName: product
             referencedColumnNames: id
+            onDelete:  CASCADE

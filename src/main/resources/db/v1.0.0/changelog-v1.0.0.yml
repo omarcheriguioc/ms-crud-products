@@ -1,7 +1,7 @@
 databaseChangeLog:
   - include:
       file: ./changelogs/changelog-create-table-product.yml
-      relativePath: true
+      relativeToChangelogFile: true
   - include:
-      file: ./changelogs/changelog-create-table-product.yml
-      relativePath: true
+      file: ./changelogs/changelog-create-table-review.yml
+      relativeToChangelogFile: true
