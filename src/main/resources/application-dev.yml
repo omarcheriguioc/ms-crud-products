@@ -1,5 +1,5 @@
 spring:
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/products
-    username: tuto_user
-    password: password
+    url: r2dbc:postgresql://localhost:5432/products?schema=products
+    username: postgres
+    password: postgrespw
