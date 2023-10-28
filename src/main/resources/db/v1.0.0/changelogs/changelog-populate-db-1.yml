@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: ocherigui
+      changes:
+        - sqlFile:
+            path: sql/populate-database-1.sql
+            relativeToChangelogFile: true

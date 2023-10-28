@@ -5,3 +5,6 @@ databaseChangeLog:
   - include:
       file: ./changelogs/changelog-create-table-review.yml
       relativeToChangelogFile: true
+  - include:
+      file: ./changelogs/changelog-populate-db-1.yml
+      relativeToChangelogFile: true
