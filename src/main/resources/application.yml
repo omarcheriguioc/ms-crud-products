@@ -4,3 +4,10 @@ spring:
 
 server:
   port: 9091
+
+logging:
+  level:
+    org.springframework.security.web.server: DEBUG
+    org.springframework.web.cors: DEBUG
+    org.liquibase: DEBUG
+

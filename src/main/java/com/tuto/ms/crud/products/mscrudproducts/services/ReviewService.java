@@ -21,8 +21,8 @@ public class ReviewService {
         return reviewRepository.save(review);
     }
 
-    public Flux<Review> getAllReviews() {
-        return reviewRepository.findAll();
+    public Flux<Review> getReviewsByProductId(Long productId) {
+        return reviewRepository.getReviewsByProductId(productId);
     }
 
     public Mono<Review> getReviewById(Long reviewId) {
